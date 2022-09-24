@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <WebView
+        android:id="@+id/my_webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="5">
+
+        <EditText
+            android:id="@+id/address_search_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:ems="10"
+            android:hint="주소를 입력하세요"
+            android:inputType="textPersonName" />
+
+        <ImageButton
+            android:id="@+id/search_button"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/search3"
+            android:padding="2dp" />
+
+        <ImageButton
+            android:id="@+id/cur_posi_button"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:src="@drawable/location2"
+            android:layout_weight="1"
+            android:padding="2dp" />
+    </LinearLayout>
+</FrameLayout>
